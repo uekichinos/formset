@@ -1,0 +1,50 @@
+{
+  "name": "khyrie/formset",
+  "description": "this is package to create a table",
+  "version": "v1.2",
+  "license": "MIT",
+  "keywords": [
+    "formset", "table", "migration"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Ueki Chinos",
+      "email": "megatzulkhairi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/support": "^6.0",
+    "laracasts/generators": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "khyrie\\Formset\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "khyrie\\Formset\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "khyrie\\Formset\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
