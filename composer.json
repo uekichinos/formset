@@ -23,7 +23,8 @@
   },
   "autoload": {
     "psr-4": {
-      "khyrie\\Formset\\": "src"
+      "khyrie\\Formset\\": "src",
+      "App\\": "app/"
     }
   },
   "autoload-dev": {
