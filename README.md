@@ -1,7 +1,7 @@
 # Formset
 
 [![Build Status](https://travis-ci.org/uekichinos/formset.svg?branch=master)](https://travis-ci.org/uekichinos/formset)
-[![styleci](https://styleci.io/repos/222447863/shield)](https://styleci.io/repos/222447863)
+[![styleci](https://styleci.io/repos/222476788/shield)](https://styleci.io/repos/222476788)
 [![Coverage Status](https://coveralls.io/repos/github/uekichinos/formset/badge.svg?branch=%28HEAD+detached+at+787347b%29)](https://coveralls.io/github/uekichinos/formset?branch=%28HEAD+detached+at+787347b%29)
  
 [![Packagist](https://img.shields.io/packagist/v/khyrie/formset.svg)](https://packagist.org/packages/khyrie/formset)
