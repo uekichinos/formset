@@ -1,12 +1,12 @@
 # Formset
 
-[![Build Status](https://img.shields.io/bitbucket/pipelines/uekichinos/formset?style=plastic)](https://packagist.org/packages/khyrie/formset)
-[![styleci](https://bitbucket.styleci.io/repos/-2463919070554092784/shield?style=plastic)](https://bitbucket.styleci.io/repos/-2463919070554092784)
-[![Coverage Status](https://img.shields.io/coveralls/bitbucket/uekichinos/formset?style=plastic)](https://coveralls.io/bitbucket/uekichinos/formset)
+[![Build Status](https://travis-ci.org/uekichinos/formset.svg?branch=master)](https://travis-ci.org/uekichinos/formset)
+[![styleci](https://styleci.io/repos/222447863/shield)](https://styleci.io/repos/222447863)
+[![Coverage Status](https://coveralls.io/repos/github/uekichinos/formset/badge.svg?branch=%28HEAD+detached+at+787347b%29)](https://coveralls.io/github/uekichinos/formset?branch=%28HEAD+detached+at+787347b%29)
 
-[![Packagist](https://img.shields.io/packagist/v/khyrie/formset?style=plastic)](https://packagist.org/packages/khyrie/formset)
-[![Packagist](https://poser.pugx.org/khyrie/formset/d/total?format=plastic)](https://packagist.org/packages/khyrie/formset)
-[![Packagist](https://img.shields.io/packagist/l/khyrie/formset?style=plastic)](https://packagist.org/packages/khyrie/formset)
+[![Packagist](https://img.shields.io/packagist/v/khyrie/formset.svg)](https://packagist.org/packages/khyrie/formset)
+[![Packagist](https://poser.pugx.org/khyrie/formset/d/total.svg)](https://packagist.org/packages/khyrie/formset)
+[![Packagist](https://img.shields.io/packagist/l/khyrie/formset.svg)](https://packagist.org/packages/khyrie/formset)
 
 Package description: this is package to create a table
 
