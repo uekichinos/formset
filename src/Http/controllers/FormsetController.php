@@ -3,12 +3,12 @@
 namespace khyrie\Formset\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Artisan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 use khyrie\Formset\Models\Fieldset;
 use khyrie\Formset\Models\Formset;
 use Validator;
+use Artisan;
 
 class FormsetController extends Controller
 {
