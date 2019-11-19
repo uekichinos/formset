@@ -1,7 +1,7 @@
 # Formset
  
 [![Packagist](https://img.shields.io/packagist/v/khyrie/formset.svg?style=plastic)](https://packagist.org/packages/khyrie/formset)
-[![Packagist](https://poser.pugx.org/khyrie/formset/d/total.svg?style=plastic)](https://packagist.org/packages/khyrie/formset)
+[![Packagist](https://img.shields.io/packagist/dt/khyrie/formset?style=plastic)](https://packagist.org/packages/khyrie/formset)
 [![Packagist](https://img.shields.io/packagist/l/khyrie/formset.svg?style=plastic)](https://packagist.org/packages/khyrie/formset)
 [![styleci](https://styleci.io/repos/222476788/shield?style=plastic)](https://styleci.io/repos/222476788)
 
