@@ -39,32 +39,43 @@ matrix:
         - php: 7.1
           env: ILLUMINATE_VERSION=5.3.* PHPUNIT_VERSION=~5.0
 
+# before_install:
+#     - echo "memory_limit=2G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+#     - cp ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ~/xdebug.ini
+#     - phpenv config-rm xdebug.ini
+#     - composer global require hirak/prestissimo --update-no-dev
+#     - composer require "illuminate/support:${ILLUMINATE_VERSION}" --no-update --prefer-dist
+#     - composer require "orchestra/testbench:${ILLUMINATE_VERSION/5\./3\.}" --no-update --prefer-dist
+#     - composer require "phpunit/phpunit:${PHPUNIT_VERSION}" --no-update --prefer-dist
+
+# install: 
+#   - travis_retry composer install --no-interaction --prefer-dist
+#   # - travis_retry composer require --dev satooshi/php-coveralls
+
+# before_script: 
+#   - phpenv config-add ~/xdebug.ini
+#   - composer create-project --prefer-dist laravel/laravel blog
+#   - cd ./blog
+#   - composer require --dev satooshi/php-coveralls
+#   - composer require khyrie/formset
+
+# script: 
+#   - vendor/bin/phpunit
+#   - composer run phpunit -- --coverage-clover ./tests/logs/clover.xml
+
+# # after_success: sh -c "if [ ! -z ${COVERAGE+x} ]; then php vendor/bin/php-coveralls -v; fi"
+# after_script:
+#   - php vendor/bin/php-coveralls -v
+
 before_install:
-    - echo "memory_limit=2G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-    - cp ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ~/xdebug.ini
-    - phpenv config-rm xdebug.ini
-    - composer global require hirak/prestissimo --update-no-dev
-    - composer require "illuminate/support:${ILLUMINATE_VERSION}" --no-update --prefer-dist
-    - composer require "orchestra/testbench:${ILLUMINATE_VERSION/5\./3\.}" --no-update --prefer-dist
-    - composer require "phpunit/phpunit:${PHPUNIT_VERSION}" --no-update --prefer-dist
-
-install: 
-  - travis_retry composer install --no-interaction --prefer-dist
-  - travis_retry composer require --dev satooshi/php-coveralls
-
-before_script: 
-  - phpenv config-add ~/xdebug.ini
-  - composer create-project --prefer-dist laravel/laravel blog
-  - cd ./blog
-  - composer require khyrie/formset
-
-script: 
-  - vendor/bin/phpunit
-  - composer run phpunit -- --coverage-clover ./tests/logs/clover.xml
-
-# after_success: sh -c "if [ ! -z ${COVERAGE+x} ]; then php vendor/bin/php-coveralls -v; fi"
+- composer require phpunit/phpunit:4.8.* satooshi/php-coveralls:dev-master
+- composer install --dev
+ 
+script:
+- ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml
+ 
 after_script:
-  - php vendor/bin/php-coveralls -v
+- php vendor/bin/coveralls -v
 
 notifications:
     email: false
