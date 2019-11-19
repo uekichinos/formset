@@ -10,11 +10,6 @@ php:
     - 7.3
 
 env:
-    - ILLUMINATE_VERSION=5.3.* PHPUNIT_VERSION=~5.0
-    - ILLUMINATE_VERSION=5.4.* PHPUNIT_VERSION=~5.7
-    - ILLUMINATE_VERSION=5.5.* PHPUNIT_VERSION=~6.0
-    - ILLUMINATE_VERSION=5.6.* PHPUNIT_VERSION=~7.0
-    - ILLUMINATE_VERSION=5.7.* PHPUNIT_VERSION=~7.0
     - ILLUMINATE_VERSION=5.8.* PHPUNIT_VERSION=^7.5 COVERAGE=true
 
 matrix:
@@ -57,7 +52,11 @@ install:
   - travis_retry composer install --no-interaction --prefer-dist
   - travis_retry composer require --dev satooshi/php-coveralls
 
-before_script: phpenv config-add ~/xdebug.ini
+before_script: 
+  - phpenv config-add ~/xdebug.ini
+  - composer create-project --prefer-dist laravel/laravel blog
+  - cd ./blog
+  - ls
 
 script: 
   - vendor/bin/phpunit
