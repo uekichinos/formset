@@ -17,19 +17,25 @@ composer require khyrie/formset
 ### Publish Configuration File
 
 ```bash
-php artisan vendor:publish --provider="khyrie\Formset\ServiceProvider" --tag="config"
+php artisan vendor:publish --tag="formset-config"
+```
+
+### Publish View File
+
+```bash
+php artisan vendor:publish --tag="formset-view"
 ```
 
 ## Usage
 
 what this package can do?
 
-- generate table and simple field
-- generate migration file
+- generate table with fields
+- generate database migration file
 
 use at your own risk!!! :)
 
-this is my first attempt to create my own laravel package
+this is my first attempt to create my own laravel package. have fun!!!
 
 ## Security
 
@@ -39,3 +45,7 @@ If you discover any security related issues, please email instead of using the i
 
 This package is bootstrapped with the help of
 [melihovv/laravel-package-generator](https://github.com/melihovv/laravel-package-generator).
+
+And thanks to:
+
+- [laracasts/generators](https://github.com/laracasts/Laravel-5-Generators-Extended)

@@ -37,12 +37,13 @@
         <option value="date" {{ ($result->datatype == 'date' ? 'selected' : '') }}>Date</option>
         <option value="time" {{ ($result->datatype == 'time' ? 'selected' : '') }}>Time</option>
         <option value="datetime" {{ ($result->datatype == 'datetime' ? 'selected' : '') }}>Date Time</option>
+        <option value="binary" {{ ($result->datatype == 'binary' ? 'selected' : '') }}>Binary</option>
       </select>
     </div>
 
     <hr>
     
-    <button type="submit" class="btn btn-primary">Update</button>
-    <a href="{{url('formset/show/'.$result->formsetid)}}" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-check-circle"></i>&nbsp;Update</button>
+    <a href="{{url('formset/show/'.$result->formsetid)}}" class="btn btn-secondary"><i class="fa fa-ban"></i>&nbsp;Cancel</a>
   </form>
 @endsection

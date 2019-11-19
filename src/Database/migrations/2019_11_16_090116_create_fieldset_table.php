@@ -18,7 +18,7 @@ class CreateFieldsetTable extends Migration
             $table->bigInteger('formsetid');
             $table->string('name');
             $table->string('field');
-            $table->enum('datatype', ['integer', 'double', 'char', 'varchar', 'text', 'boolean', 'date', 'time', 'datetime']);
+            $table->enum('datatype', ['integer', 'double', 'char', 'varchar', 'text', 'boolean', 'date', 'time', 'datetime', 'binary']);
             $table->timestamps();
         });
     }

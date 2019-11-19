@@ -25,25 +25,25 @@
   <hr>
 
   <div class="row">
-    <div class="col-4">
-      <a href="{{url('formset/'.$formset->id.'/fieldset/create')}}" class="btn btn-primary">Create Fieldset</a>
-      <a href="{{url('formset')}}" class="btn btn-secondary">Back</a>
+    <div class="col">
+      <a href="{{url('formset')}}" class="btn btn-secondary"><i class="fa fa-chevron-left"></i>&nbsp;Back</a>
+      <a href="{{url('formset/'.$formset->id.'/fieldset/create')}}" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;Add Fieldset</a>
     </div>
 
     @if(count($fieldsets) > 0)
-    <div class="col-2">
+    <div class="col-3 text-right">
       <form action="{{url('formset/gentable/'.$formset->id)}}" method="POST">
         @csrf
-        <button type="submit" class="btn btn-primary">Generate Table</button>
+        <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;Create Table</button>
       </form>
     </div>
     @endif
 
     @if($hastable)
-    <div class="col">
+    <div class="col-3 text-right">
       <form action="{{url('formset/genmigration/'.$formset->id)}}" method="POST">
         @csrf
-        <button type="submit" class="btn btn-info">Migration</button>
+        <button type="submit" class="btn btn-info"><i class="fa fa-wrench"></i>&nbsp;Create Migration</button>
       </form>
     </div>
     @endif
@@ -52,15 +52,15 @@
 
   <div class="row">
     <div class="col">
-      <table class="table">
+      <table class="table table-striped">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
+            <th scope="col" width="5%">#</th>
             <th scope="col">Name</th>
             <th scope="col">Field</th>
-            <th scope="col">Data Type</th>
-            <th scope="col">Created Date</th>
-            <th scope="col">Action</th>
+            <th scope="col" width="15%">Data Type</th>
+            <th scope="col" width="15%">Created Date</th>
+            <th scope="col" width="15%">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -73,14 +73,14 @@
                 <td>{{ $fieldset->datatype }}</td>
                 <td>{{ $fieldset->created_at->format('d M Y, H:i') }}</td>
                 <td>
-                  <a href="{{url('formset/'.$formset->id.'/fieldset/edit/'.$fieldset->id)}}">Edit</a> | 
-                  <a href="{{url('formset/'.$formset->id.'/fieldset/delete/'.$fieldset->id)}}">Delete</a>
+                  <a href="{{url('formset/'.$formset->id.'/fieldset/edit/'.$fieldset->id)}}"><i class="fa fa-edit"></i>&nbsp;Edit</a>&nbsp;&nbsp;
+                  <a href="{{url('formset/'.$formset->id.'/fieldset/delete/'.$fieldset->id)}}"><i class="fa fa-trash"></i>&nbsp;Delete</a>
                 </td>
               </tr>
             @endforeach
           @else
             <tr>
-              <td colspan="6">no record found</td>
+              <td colspan="6" class="text-center">Owh! no record here. Lets add fieldset.</td>
             </tr>
           @endif
         </tbody>

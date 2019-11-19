@@ -33,7 +33,7 @@
 
     <hr>
     
-    <button type="submit" class="btn btn-primary">Update</button>
-    <a href="/formset" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-check-circle"></i>&nbsp;Update</button>
+    <a href="/formset" class="btn btn-secondary"><i class="fa fa-ban"></i>&nbsp;Cancel</a>
   </form>
 @endsection

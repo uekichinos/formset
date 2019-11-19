@@ -37,12 +37,13 @@
         <option value="date">Date</option>
         <option value="time">Time</option>
         <option value="datetime">Date Time</option>
+        <option value="binary">Binary</option>
       </select>
     </div>
 
     <hr>
     
-    <button type="submit" class="btn btn-primary">Create</button>
-    <a href="{{url('formset/show/'.$id)}}" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-check-circle"></i>&nbsp;Submit</button>
+    <a href="{{url('formset/show/'.$id)}}" class="btn btn-secondary"><i class="fa fa-ban"></i>&nbsp;Cancel</a>
   </form>
 @endsection
