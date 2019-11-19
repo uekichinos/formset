@@ -16,7 +16,6 @@ env:
     - ILLUMINATE_VERSION=5.6.* PHPUNIT_VERSION=~7.0
     - ILLUMINATE_VERSION=5.7.* PHPUNIT_VERSION=~7.0
     - ILLUMINATE_VERSION=5.8.* PHPUNIT_VERSION=^7.5 COVERAGE=true
-    - ILLUMINATE_VERSION=6.* PHPUNIT_VERSION=^7.5 COVERAGE=true
 
 matrix:
     # For each PHP version we exclude the coverage env, except for PHP 7.1
@@ -54,7 +53,9 @@ before_install:
     - composer require "orchestra/testbench:${ILLUMINATE_VERSION/5\./3\.}" --no-update --prefer-dist
     - composer require "phpunit/phpunit:${PHPUNIT_VERSION}" --no-update --prefer-dist
 
-install: travis_retry composer install --no-interaction --prefer-dist
+install: 
+  - travis_retry composer install --no-interaction --prefer-dist
+  - travis_retry composer require --dev satooshi/php-coveralls
 
 before_script: phpenv config-add ~/xdebug.ini
 
