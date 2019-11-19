@@ -1,11 +1,11 @@
 language: php
 install:
     - composer install
-    - travis_retry composer require --dev satooshi/php-coveralls
+    - travis_retry composer require --dev php-coveralls/php-coveralls
+    
 php:
   - 7.3
   - 7.2
-  - 7.1
 
 script:
   - mkdir -p build/logs
