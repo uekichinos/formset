@@ -61,7 +61,7 @@ before_script: phpenv config-add ~/xdebug.ini
 
 script: 
   - vendor/bin/phpunit
-  - composer run phpunit ./tests/logs/clover.xml
+  - composer run phpunit -- --coverage-clover ./tests/logs/clover.xml
 
 # after_success: sh -c "if [ ! -z ${COVERAGE+x} ]; then php vendor/bin/php-coveralls -v; fi"
 after_script:
