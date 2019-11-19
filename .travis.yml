@@ -56,7 +56,7 @@ before_script:
   - phpenv config-add ~/xdebug.ini
   - composer create-project --prefer-dist laravel/laravel blog
   - cd ./blog
-  - ls
+  - composer require khyrie/formset
 
 script: 
   - vendor/bin/phpunit
