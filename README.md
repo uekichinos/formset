@@ -3,7 +3,7 @@
 [![Packagist](https://img.shields.io/packagist/v/khyrie/formset.svg)](https://packagist.org/packages/khyrie/formset)
 [![Packagist](https://poser.pugx.org/khyrie/formset/d/total.svg)](https://packagist.org/packages/khyrie/formset)
 [![Packagist](https://img.shields.io/packagist/l/khyrie/formset.svg)](https://packagist.org/packages/khyrie/formset)
-[![styleci](https://styleci.io/repos/222476788/shield)](https://styleci.io/repos/222476788)
+[![styleci](https://styleci.io/repos/222476788/shield?style=plastic)](https://styleci.io/repos/222476788)
 
 Package description: this is package to create a table
 
