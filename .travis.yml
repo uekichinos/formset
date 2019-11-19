@@ -68,7 +68,7 @@ matrix:
 #   - php vendor/bin/php-coveralls -v
 
 before_install:
-- composer require phpunit/phpunit:4.8.*
+- composer require phpunit/phpunit
 - composer require --dev satooshi/php-coveralls
 - composer install --dev
  
