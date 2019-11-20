@@ -9,14 +9,9 @@ env:
   matrix:
     - LARAVEL_VERSION=6.0.*
 
-matrix:
-  fast_finish: true
-
-cache:
-  directories:
-    - $HOME/.composer/cache
-    - node_modules
+install: travis_retry composer install --no-interaction --prefer-dist --no-suggest
 
 before_script:
-  - travis_retry composer self-update
   - composer require "illuminate/support:${LARAVEL_VERSION}"
+
+script: vendor/bin/phpunit --verbose
