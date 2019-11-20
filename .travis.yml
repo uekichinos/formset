@@ -21,5 +21,3 @@ cache:
 before_script:
   - travis_retry composer self-update
   - composer require "illuminate/support:${LARAVEL_VERSION}"
-  - yarn install
-  - yarn run dev
