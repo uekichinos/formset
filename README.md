@@ -4,6 +4,7 @@
 [![Packagist](https://img.shields.io/packagist/dt/khyrie/formset?style=plastic)](https://packagist.org/packages/khyrie/formset)
 [![Packagist](https://img.shields.io/packagist/l/khyrie/formset.svg?style=plastic)](https://packagist.org/packages/khyrie/formset)
 [![styleci](https://styleci.io/repos/222476788/shield?style=plastic)](https://styleci.io/repos/222476788)
+[![Build Status](https://travis-ci.org/uekichinos/formset.svg?branch=master)](https://travis-ci.org/uekichinos/formset)
 
 Package description: this is package to create a table
 
