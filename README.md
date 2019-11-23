@@ -18,13 +18,13 @@ composer require khyrie/formset
 ### Publish Configuration File
 
 ```bash
-php artisan vendor:publish --tag="formset-config"
+php artisan vendor:publish --provider="khyrie\Formset\ServiceProvider" --tag="config"
 ```
 
 ### Publish View File
 
 ```bash
-php artisan vendor:publish --tag="formset-view"
+php artisan vendor:publish --provider="khyrie\Formset\ServiceProvider" --tag="view"
 ```
 
 ## Usage

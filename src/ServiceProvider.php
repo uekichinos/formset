@@ -10,11 +10,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->publishes([
             self::CONFIG_PATH => config_path('formset.php'),
-        ], 'formset-config');
+        ], 'config');
 
         $this->publishes([
             __DIR__.'/resources/views' => resource_path('views/vendor/formset'),
-        ], 'formset-view');
+        ], 'view');
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'formset');
