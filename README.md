@@ -20,7 +20,7 @@ Use at your own risk!!! :)
 
 ```bash
 Laravel >=6.0
-PHP >= 7.1
+PHP >= 7.2
 ```
 
 
