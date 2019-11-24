@@ -50,7 +50,7 @@ class FormsetController extends Controller
         $formset->desc = $request->desc;
         $formset->table = $table;
         $formset->save();
-        
+
         return redirect('/formset')->with(['status' => 'success', 'msg' => 'Successfully created "'.$request->name.'".']);
     }
 
@@ -92,8 +92,7 @@ class FormsetController extends Controller
             $data = ['formset' => $formset[0], 'fieldsets' => $fieldsets, 'hastable' => $hastable, 'btn_migration' => $table_migration_btn, 'fields' => $fields];
 
             return view('formset::show')->with($data);
-        } 
-        else {
+        } else {
             echo 'no record found';
         }
     }
@@ -123,7 +122,7 @@ class FormsetController extends Controller
         /* get data */
         $fieldsets = config('formset.fieldsets');
         $data = ['id' => $formsetid, 'fieldsets' => $fieldsets];
-        
+
         return view('formset::fieldset_create')->with($data);
     }
 
@@ -226,7 +225,7 @@ class FormsetController extends Controller
 
                 /* auto generate reserve field */
                 $reserve_column = config('formset.column_name_reserve');
-                if(count($reserve_column) > 0) {
+                if (count($reserve_column) > 0) {
                     foreach ($reserve_column as $key => $value) {
                         $table->{$value}($key);
                     }
@@ -246,7 +245,7 @@ class FormsetController extends Controller
     {
         /* check setting for table_migration_btn */
         $table_migration_btn = config('formset.table_migration_btn');
-        if($table_migration_btn === false) {
+        if ($table_migration_btn === false) {
             return redirect('/formset/show/'.$formsetid)->with(['status' => 'success', 'msg' => 'Function file migration is disabled.']);
         }
 
