@@ -19,7 +19,7 @@ Use at your own risk!!! :)
 ## Requirements
 
 ```bash
-Laravel >=6.0
+Laravel >= 6.0
 PHP >= 7.2
 ```
 
