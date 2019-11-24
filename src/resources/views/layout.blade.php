@@ -14,11 +14,13 @@
 				margin-top: 90px;
 			}
 			.formset-cont .formset-header {
-				background-color: #17A589;
+				/*background-color: #17A589;*/
 				padding: 20px 0px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid rgba(0,0,0,.125);
 			}
 			.formset-cont .formset-header h3 {
-				color: #FFF;
+				color: #000;
 			}
 			.formset-cont .formset-info {
 				padding: 20px 0px 0px 0px;
@@ -26,7 +28,6 @@
 			.formset-cont .formset-fieldnav {
 				padding: 20px 0px;
 			}
-
 		</style>
   		<title>Formset</title>
 	</head>

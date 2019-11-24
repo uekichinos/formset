@@ -6,7 +6,14 @@
 [![styleci](https://styleci.io/repos/222476788/shield?style=plastic)](https://styleci.io/repos/222476788)
 [![Build Status](https://img.shields.io/travis/uekichinos/formset?style=plastic)](https://travis-ci.org/uekichinos/formset)
 
-Package description: this is package to create a table
+This package help you to:
+
+1. create table
+2. create simple field and data type
+3. create migration file
+
+Please take note this package is still under active development. 
+Use at your own risk!!! :)
 
 ## Installation
 
@@ -14,29 +21,25 @@ Install via composer
 ```bash
 composer require khyrie/formset
 ```
- 
-### Publish Configuration File
 
+Run migration command
+```bash
+php artisan migrate
+```
+ 
+Publish configuration file
 ```bash
 php artisan vendor:publish --provider="khyrie\Formset\ServiceProvider" --tag="config"
 ```
 
-### Publish View File
-
+Publish view file
 ```bash
 php artisan vendor:publish --provider="khyrie\Formset\ServiceProvider" --tag="view"
 ```
 
 ## Usage
 
-what this package can do?
-
-- generate table with fields
-- generate database migration file
-
-use at your own risk!!! :)
-
-this is my first attempt to create my own laravel package. have fun!!!
+Navigate to page '/formset'.
 
 ## Security
 
