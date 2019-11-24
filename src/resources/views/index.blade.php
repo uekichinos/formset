@@ -22,8 +22,8 @@
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  {{ $result->desc }}
-                  <div class="card-subtitle text-muted font-weight-light font-italic"><small>{{ $result->created_at->format('d/m/Y, H:ia') }}</small></div>
+                  {{ $result->desc }} 
+                  <div class="card-subtitle text-muted font-weight-light font-italic"><small><i class="fa fa-clock"></i>{{ $result->created_at->format('d/m/Y, H:ia') }}</small></div>
                 </p>
               </div>
               <div class="card-footer font-weight-light font-italic">

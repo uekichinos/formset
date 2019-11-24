@@ -16,6 +16,14 @@ Please take note this package is still under active development.
 Use at your own risk!!! :)
 
 
+## Requirements
+
+```bash
+Laravel >=6.0
+PHP >= 7.1
+```
+
+
 ## Installation
 
 Install via composer
